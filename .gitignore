@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# Firebase credentials
+server/config/firebaseServiceAccount.json
+
+# Uploaded file storage
+server/storage/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Build output
+client/dist/
