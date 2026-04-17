@@ -27,3 +27,10 @@ app.get('/health', (req, res) => res.json({ status: 'up' }));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+app.use(cors({
+    origin: [
+        'http://localhost:5173',
+        'https://your-app.vercel.app'  // Replace with your Vercel URL
+    ]
+}));
